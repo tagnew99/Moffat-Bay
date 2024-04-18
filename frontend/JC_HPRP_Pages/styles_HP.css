@@ -1,0 +1,104 @@
+header {
+    
+    color: #3C9ECC;
+    text-align: center;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 48pt;
+}
+
+nav {
+    background-color: #383638;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E7E8E9;
+    font-family: Courier, monospace;
+    font-size: 16pt;
+}
+
+nav ul li a:hover {
+    color: #48A86C;
+}
+
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #0B0C0C;
+}
+
+body {
+    padding-bottom: 60px; /* Adjust the value to match the height of your footer */
+}
+
+article h2 {
+    font-style: bold;
+    text-align: center;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-container {
+    text-align: center; /* For image placement */
+    padding: 20px;
+}
+
+.image-container img {
+    display: block; /* Make the image a block element to control its width and height */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* For text under image */
+
+.article-container {
+    width: 40%; /* container width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left;
+}
+
+
+footer {
+  background-color: #383638;
+  padding: 10px; /* Adjust the padding to shrink the footer */
+  text-align: center;
+  color: #F7F9FA;
+  height: 40px; /* Adjust the height of the footer */
+  line-height: 30px; /* Center text vertically within the footer */
+  
+}
+
+footer p {
+    font-family: Courier, monospace;
+    font-size: 12pt;
+}
+
