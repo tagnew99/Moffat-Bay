@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Summary</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .summary {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .confirm-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Reservation Summary</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="Reg.html">Registration</a></li>
+            <li><a href="login.html">Register/Login</a></li>
+        </ul>
+    </nav>
+<!-- Placeholder-->
+    <div class="summary"> 
+        <p><strong>Room Size:</strong> <span id="roomSize">Double Full Beds</span></p>
+        <p><strong>Number of Guests:</strong> <span id="numGuests">3</span></p>
+        <p><strong>Check-in Date:</strong> <span id="checkInDate">2024-04-25</span></p>
+        <p><strong>Check-out Date:</strong> <span id="checkOutDate">2024-04-28</span></p>
+        <p><strong>Price: </strong> <span id="price"> $150</span></strong></p>
+    </div>
+    <!-- Buttons for confirming or canceling the reservation -->
+    <button class="confirm-btn" onclick="confirmReservation()">Confirm Reservation</button>
+    <button class="cancel-btn" onclick="window.location.href='index.html';">Cancel</button>
+
+    <script>
+        function confirmReservation() {
+            alert('Reservation confirmed!'); // Placeholder 
+        }
+    </script>
+</body>
+</html>
