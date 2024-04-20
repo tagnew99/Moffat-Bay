@@ -1,0 +1,70 @@
+header {
+    
+    color: #3C9ECC;
+    text-align: center;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'Charmonman';
+    src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+}
+
+header h1 {
+    font-family: 'Charmonman', cursive;
+    font-size: 48pt;
+}
+
+nav {
+    background-color: #383638;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E7E8E9;
+    font-family: Courier, monospace;
+    font-size: 16pt;
+}
+
+nav ul li a:hover {
+    color: #48A86C;
+}
+
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #0B0C0C;
+}
+
+footer {
+    background-color: #383638;
+    color: #F7F9FA;
+    text-align: center;
+    padding: 10px; /* Reduced padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-family: Courier, monospace;
+    font-size: 14pt; /* Reduced font size */
+}

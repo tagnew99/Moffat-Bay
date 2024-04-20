@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #F7F9FA;
+            background-color: #E4EEF5;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="AP.html">About</a></li>
             <li><a href="reservation.html">Reservations</a></li>
             <li><a href="Reg.html">Registration</a></li>
             <li><a href="login.html">Register/Login</a></li>
@@ -38,7 +38,7 @@
             <option value="queen">Queen</option>
             <option value="double_queen">Double Queen Beds</option>
             <option value="king">King</option>
-        </select><br>
+        </select><br> <br>
 
         <label for="number_of_guests">Number of Guests:</label>
         <select id="number_of_guests" name="number_of_guests">
@@ -47,22 +47,24 @@
             <option value="3">3 ($150)</option>
             <option value="4">4 ($150)</option>
             <option value="5">5 ($150)</option>
-        </select><br>
+        </select><br> <br>
 
         <label for="check_in_date">Check-in Date:</label>
-        <input type="date" id="check_in_date" name="check_in_date"><br>
+        <input type="date" id="check_in_date" name="check_in_date"><br> <br>
 
         <label for="check_out_date">Check-out Date:</label>
-        <input type="date" id="check_out_date" name="check_out_date"><br>
+        <input type="date" id="check_out_date" name="check_out_date"><br> <br>
 
-        <input type="submit" value="Submit Reservation">
+        <input type="submit" value="Submit Reservation"> 
     </form>
 
     <script>
         function submitForm() {
             // Placeholder
             alert("Placeholder");
+            window.location.href = "reservationsummary.html";
             return false; // Prevent the form from submitting
+            
         }
     </script>
 </body>
