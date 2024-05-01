@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Look Up Registration</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+             <li><a href="AP.html">About</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="Reg.html">Registration</a></li>
+            <li><a href="login.html">Register/Login</a></li>
+            <li><a href="lookup.html">Look up Registration</a></li>
+           
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Reservation Lookup</h1>
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Enter Reservation ID or Email Address">
+            <input type="submit" value="Search">
+        </form>
+        <table>
+            <tr>
+                <th>Room Size</th>
+                <th>Number of Guests</th>
+                <th>Check-in Date</th>
+                <th>Check-out Date</th>
+            </tr>
+            <!-- Generates data from customer -->
+            <tr>
+                <td>Double</td>
+                <td>2</td>
+                <td>2024-05-01</td>
+                <td>2024-05-05</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
