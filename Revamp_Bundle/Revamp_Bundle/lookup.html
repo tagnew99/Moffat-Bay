@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Lookup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles_LU.css"> 
+</head>
+
+<body>
+    <div class="header">
+        <h1>Check Your Reservation</h1>
+    </div>
+
+    <div class="navbar">
+        <a class="nav-item" href="HMP2.html"> <i class="fa-solid fa-house"></i> Home</a>
+        <a class="nav-item" href="AP.html"> <i class="fa-solid fa-book"></i> About Us</a>
+        <div class="dropdown nav-item">
+            <a class="nav-item" href="reservation.html"> <i class="fa-solid fa-check"></i> Reservations</a>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="reservation.html">Make a Reservation</a>
+                <a class="dropdown-item" href="attractions.html">Explore</a>
+                <a class="dropdown-item" href="lookup.html">Reservation Confirmation</a>
+                <a class="dropdown-item" href="reservationsummary.html">Reservation Summary</a>
+            </div>
+        </div>
+        <a class="nav-item active" href="login.html"> <i class="fa fa-user"></i> Login/Register</a>
+    </div>
+
+    <div class="container">
+        <h3>Reservation Lookup</h3>
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Enter Reservation ID or Email Address">
+            <input type="submit" value="Search">
+        </form>
+        <table>
+            <tr>
+                <th>Room Size</th>
+                <th>Number of Guests</th>
+                <th>Check-in Date</th>
+                <th>Check-out Date</th>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>2</td>
+                <td>2024-05-01</td>
+                <td>2024-05-05</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+      <footer>&copy; 2024 Moffat Bay Lodge. All rights reserved.</footer>
+    </div>
+
+</body>
+</html>

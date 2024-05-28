@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1E1E1;
+}
+
+/* Header/logo */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #020202;
+  color: #26B7DB;
+  font-family: Tahoma, sans-serif;
+}
+
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  display: flex; 
+  justify-content: space-between; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* shadow */
+}
+
+.nav-item {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  width: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #020202;
+}
+
+.nav-item.active:hover {
+  background-color: #04AA6D;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* dropdown directly below */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); 
+  background-color: #020202;
+  min-width: 300px;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* shadow */
+}
+
+.dropdown-content .dropdown-item {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #26B7DB;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .dropdown-content {
+    position: relative;
+  }
+}
+
+
+/* Flexbox for side-by-side layout */
+
+/* Flex container for side-by-side layout */
+.flex-container-1 {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  padding: 15px; /* Padding for spacing */
+  background-color: #f1f1f1; /* Optional: Light background */
+}
+
+/* Image container with overlaid text */
+.image-container-1 {
+  position: relative; /* Position relative for overlaid text */
+  flex: 1; /* Allow this element to grow */
+  padding-right: 20px; /* Padding for spacing */
+}
+
+.image-container-1 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Text block inside the image */
+.text-block-1 {
+  position: absolute; 
+  bottom: 20px;
+  right: 20px;
+  background-color: black; 
+  color: white; 
+  padding: 10px; 
+  border-radius: 5px; /* corners */
+}
+
+/* text box on the right side of the image */
+.side-text-1 {
+  flex: 1; 
+  padding-left: 20px; 
+  text-align: left; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Flex container for side-by-side layout */
+.flex-container-2 {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  padding: 15px; /* Padding for spacing */
+  background-color: #f1f1f1; /* Optional: Light background */
+}
+
+/* Image container with overlaid text */
+.image-container-2 {
+  position: relative; /* Position relative for overlaid text */
+  flex: 1; /* Allow this element to grow */
+  padding-right: 20px; /* Padding for spacing */
+}
+
+.image-container-2 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Text block inside the image */
+.text-block-2 {
+  position: absolute; 
+  bottom: 20px;
+  right: 20px;
+  background-color: black; 
+  color: white; 
+  padding: 10px; /* Padding for the text block */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* New text box on the right side of the image */
+.side-text-2 {
+  flex: 1; /* Allow this element to grow */
+  padding-left: 20px; /* Padding to create space from the image */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Flex container for side-by-side layout */
+.flex-container-3 {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  padding: 15px; /* Padding for spacing */
+  background-color: #f1f1f1; /* Optional: Light background */
+}
+
+/* Image container with overlaid text */
+.image-container-3 {
+  position: relative; /* Position relative for overlaid text */
+  flex: 1; /* Allow this element to grow */
+  padding-right: 20px; /* Padding for spacing */
+}
+
+.image-container-3 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Text block inside the image */
+.text-block-3 {
+  position: absolute; 
+  bottom: 20px;
+  right: 20px;
+  background-color: black; 
+  color: white; 
+  padding: 10px; /* Padding for the text block */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* New text box on the right side of the image */
+.side-text-3 {
+  flex: 1; /* Allow this element to grow */
+  padding-left: 20px; /* Padding to create space from the image */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Flex container for side-by-side layout */
+.flex-container-4 {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: flex-start; /* Align content to the start (left) */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Full width */
+  padding: 15px; /* Padding for spacing */
+  background-color: #f1f1f1; /* Optional: Light background */
+}
+
+/* Image container with overlaid text */
+.image-container-4 {
+  position: relative; /* Position relative for overlaid text */
+  flex: 1; /* Allow this element to grow */
+  padding-right: 20px; /* Padding for spacing */
+}
+
+.image-container-4 img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Text block inside the image */
+.text-block-4 {
+  position: absolute; 
+  bottom: 20px;
+  right: 20px;
+  background-color: black; 
+  color: white; 
+  padding: 10px; /* Padding for the text block */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* New text box on the right side of the image */
+.side-text-4 {
+  flex: 1; /* Allow this element to grow */
+  padding-left: 20px; /* Padding to create space from the image */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #020202;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lodge Reservations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Icons -->
+    <link rel="stylesheet" href="styles_Res.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <div class="header">
+  <h1>Reservations</h1>
+  
+</div>
+
+<div class="navbar">
+  <a class="nav-item" href="HMP2.html"> <i class="fa-solid fa-house"></i> Home</a>
+  <a class="nav-item" href="AP.html"> <i class="fa-solid fa-book"></i> About Us</a>
+  <div class="dropdown nav-item">
+    <a class="nav-item" href="reservation.html"> <i class="fa-solid fa-check"></i> Reservations</a>
+    <div class="dropdown-content">
+      <a class="dropdown-item" href="reservation.html">Make a Reservation</a>
+      <a class="dropdown-item" href="attractions.html">View Attractions</a>
+      <a class="dropdown-item" href="lookup.html">Reservation Confirmation</a>
+      <a class="dropdown-item" href="reservationsummary.html">Reservation Summary</a>
+    </div></div>
+     <a class="nav-item active" href="login.html"> <i class="fa fa-user"></i> Login/Register</a>
+  </div>
+</div>
+
+<!-- JavaScript for query parameters and summary display -->
+<script>
+function getQueryParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const paramPairs = queryString.split("&");
+
+    paramPairs.forEach(pair => {
+        const [key, value] = pair.split("=");
+        params[key] = decodeURIComponent(value);
+    });
+
+    return params;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const queryParams = getQueryParams();
+    const summaryElement = document.getElementById("reservation-summary");
+
+    summaryElement.innerText = `
+      Room Size: ${queryParams["room_size"]}
+      Number of Guests: ${queryParams["number_of_guests"]}
+      Check-in Date: ${queryParams["check_in_date"]}
+      Check-out Date: ${queryParams["check_out_date"]}
+
+      Selected Activity: ${queryParams["activities"]}
+      Activity Start Date: ${queryParams["activity_start"]}
+      Activity End Date: ${queryParams["activity_end"]}
+      Additional Information: ${queryParams["additional_info"]}
+    `;
+});
+</script>
+
+<!-- Main form wrapper with forms on the left and images on the right -->
+<div class="form-wrapper">
+    <!-- Room Reservation Form -->
+    <div class="reservation-form">
+        <h2>Room Reservation</h2>
+        <form>
+            <label for="room_size">Room Size:</label>
+            <select id="room_size" name="room_size">
+                <option value="double_full">Double Full Beds</option>
+                <option value="queen">Queen</option>
+                <option value="double_queen">Double Queen Beds</option>
+                <option value="king">King</option>
+            </select><br><br>
+
+            <label for="number_of_guests">Number of Guests:</label>
+            <select id="number_of_guests" name="number_of_guests">
+                <option value="1">1 ($115)</option>
+                <option value="2">2 ($115)</option>
+                <option value="3">3 ($150)</option>
+                <option value="4">4 ($150)</option>
+                <option value="5">5 ($150)</option>
+            </select><br><br>
+
+            <label for="check_in_date">Check-in Date:</label>
+            <input type="date" id="check_in_date" name="check_in_date"><br><br>
+
+            <label for="check_out_date">Check-out Date:</label>
+            <input type="date" id="check_out_date"><br><br>
+
+            <input type="submit" value="Submit"> 
+        </form>
+    </div>
+
+    <!-- Room Images on the Right -->
+    <div class="room-images">
+        <img src="double-full.jpg" alt="Double Full Beds" class="room-image">
+        <img src="queen.jpg" alt="Queen Room" class="room-image">
+        <img src="double-queen.jpg" alt="Double Queen Beds" class="room-image">
+        <img src="king.jpg" alt="King Room" class="room-image">
+    </div>
+</div>
+
+<div class="form-wrapper">
+    <!-- Activities Form -->
+    <div class="activities-form">
+        <h2>Choose Activities</h2>
+        <form>
+            <label for="activities">Select Activity:</label>
+            <select id="activities" name="activities">
+                <option value="fishing">Hiking Permit - $50</option>
+                <option value="hiking">Kayaking - $30</option>
+                <option value="boating">Scuba Diving- $150</option>
+                <option value="cycling">Whale Watching - $120</option>
+            </select><br><br>
+
+            <label for="activity_start">Activity Start Date:</label>
+            <input type="date" id="activity_start"><br><br>
+
+            <label for="activity_end">Activity End Date:</label>
+            <input type="date" id="activity_end"><br><br>
+
+            <label for="additional_info">Additional Information:</label>
+            <input type="text" id="additional_info" placeholder="Additional comments"><br><br>
+
+            <input type="submit" value="Submit"> 
+        </form>
+    </div>
+
+    <!-- Activity Images on the Right -->
+    <div class="activity-images">
+        <img src="Hiking.jpeg" alt="Hiking" class="activity-image">
+        <img src="Kayaking.jpeg" alt="Kayaking" class="activity-image">
+        <img src="Scuba.jpeg" alt="Scuba" class="activity-image">
+        <img src="Whales.jpeg" alt="Whales" class="activity-image">
+    </div>
+</div>
+
+<div class="footer">
+  <footer>&copy; 2024 Moffat Bay Lodge. All rights reserved.</footer>
+</div>
+
+</body>
+</html>
