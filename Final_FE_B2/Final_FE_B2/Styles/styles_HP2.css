@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1E1E1;
+}
+
+
+.header {
+  padding: 80px; 
+  background: #020202; 
+  color: #26B7DB; 
+  font-family: Tahoma, sans-serif; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.header img {
+  height: 60px; 
+  margin-right: 20px; 
+}
+
+.header h1 {
+  font-size: 50px; 
+  margin: 0; 
+}
+
+
+.header h2 {
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  display: flex; 
+  justify-content: space-between; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* shadow */
+}
+
+.nav-item {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  width: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #020202;
+}
+
+.nav-item.active:hover {
+  background-color: #04AA6D;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* dropdown placemebt */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); 
+  background-color: #020202;
+  min-width: 300px;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* shadow */
+}
+
+.dropdown-content .dropdown-item {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #26B7DB;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .dropdown-content {
+    position: relative;
+  }
+}
+
+
+/* Main column */
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: #D5D9DA;
+  padding: 20px;
+}
+
+.image-container {
+    text-align: center; 
+    padding: 20px;
+}
+
+.image-container img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+.article-container {
+    width: 40%; 
+    margin: 0 auto; 
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #020202;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
